@@ -17,6 +17,14 @@ export default function Footer() {
               Transforming businesses through expert management consulting across all 
               departments. Your partner for sustainable growth and operational excellence.
             </p>
+            <div className="mb-6">
+              <a 
+                href="mailto:ken@simpleemails.co.uk" 
+                className="text-gold-400 hover:text-gold-300 transition-colors text-sm"
+              >
+                📧 ken@simpleemails.co.uk
+              </a>
+            </div>
             <div className="flex gap-4">
               {["LinkedIn", "Twitter", "Facebook"].map((social) => (
                 <a

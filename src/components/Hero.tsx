@@ -17,14 +17,6 @@ export default function Hero() {
 
       <div className="container mx-auto px-6 pt-32 pb-16 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-slate-800/50 backdrop-blur-sm px-4 py-2 rounded-full border border-gold-500/20 mb-8">
-            <div className="w-2 h-2 bg-gold-400 rounded-full animate-pulse" />
-            <span className="text-sm font-medium text-slate-300">
-              Transforming Businesses Since 2020
-            </span>
-          </div>
-
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold font-serif text-white mb-6 leading-tight">
             Transform Your Business with

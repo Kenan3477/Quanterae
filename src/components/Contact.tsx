@@ -184,14 +184,8 @@ export default function Contact() {
                 {
                   icon: "📧",
                   title: "Email",
-                  content: "info@quanteraesolutions.com",
-                  link: "mailto:info@quanteraesolutions.com",
-                },
-                {
-                  icon: "📱",
-                  title: "Phone",
-                  content: "+44 (0) 20 1234 5678",
-                  link: "tel:+442012345678",
+                  content: "ken@simpleemails.co.uk",
+                  link: "mailto:ken@simpleemails.co.uk",
                 },
                 {
                   icon: "📍",

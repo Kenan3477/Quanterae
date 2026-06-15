@@ -47,7 +47,7 @@ export default function Testimonials() {
         <div className="max-w-4xl mx-auto">
           {/* Main Testimonial Card */}
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl shadow-2xl shadow-black/20 p-8 md:p-12 mb-8 relative border border-slate-700">
-            <div className="text-6xl text-gold-400/30 absolute top-4 left-4 font-serif">"</div>
+            <div className="text-6xl text-gold-400/30 absolute top-4 left-4 font-serif">&ldquo;</div>
             <div className="relative z-10">
               <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed italic">
                 {testimonials[activeIndex].quote}

@@ -19,16 +19,17 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold font-serif text-white mb-6 leading-tight">
-            Transform Your Business with
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-200 mt-2">
-              Expert Management
-            </span>
+            Business Management Experts
           </h1>
+          
+          {/* Tagline */}
+          <p className="text-2xl md:text-3xl text-gold-400 mb-8 font-light">
+            Strategy • Growth • Results
+          </p>
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Comprehensive business management consulting across all departments. 
-            From sales optimization to staff retention, we drive results that matter.
+            We support businesses with a dynamic, results-driven approach across all departments—from sales to retention, staff to processes.
           </p>
 
           {/* CTA Buttons */}

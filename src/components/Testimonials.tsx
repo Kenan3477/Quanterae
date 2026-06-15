@@ -7,28 +7,10 @@ export default function Testimonials() {
 
   const testimonials = [
     {
-      quote: "Quanterae Solutions transformed our sales department completely. Within 6 months, we saw a 40% increase in conversion rates and our team has never been more motivated.",
-      author: "Sarah Mitchell",
-      role: "CEO, TechVenture Ltd",
-      company: "Technology Sector",
-    },
-    {
-      quote: "The process optimization work was phenomenal. We reduced operational costs by 30% while improving service quality. Their hands-on approach made all the difference.",
-      author: "James Patterson",
-      role: "Operations Director",
-      company: "Manufacturing Industry",
-    },
-    {
-      quote: "Our customer retention rates improved dramatically after implementing their strategies. The team's expertise in building lasting customer relationships is unmatched.",
-      author: "Emily Chen",
-      role: "Head of Customer Success",
-      company: "SaaS Company",
-    },
-    {
-      quote: "From staff management to strategic planning, they covered everything. Their comprehensive approach helped us scale from 20 to 100+ employees smoothly.",
-      author: "Michael Roberts",
-      role: "Founder & MD",
-      company: "Growing Startup",
+      quote: "Working with Quanterae Solutions has been transformative for our business. Their expertise and dedication are unmatched.",
+      author: "Business Owner",
+      role: "CEO",
+      company: "Growing Company",
     },
   ];
 
@@ -71,28 +53,12 @@ export default function Testimonials() {
             </div>
           </div>
 
-          {/* Testimonial Navigation */}
-          <div className="flex justify-center gap-3">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveIndex(index)}
-                className={`transition-all duration-300 ${
-                  index === activeIndex
-                    ? "w-12 h-3 bg-gold-500"
-                    : "w-3 h-3 bg-slate-600 hover:bg-slate-500"
-                } rounded-full`}
-                aria-label={`View testimonial ${index + 1}`}
-              />
-            ))}
-          </div>
-
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
             {[
-              { value: "4.9/5", label: "Client Rating" },
-              { value: "98%", label: "Client Retention" },
-              { value: "100+", label: "Projects Delivered" },
+              { value: "100+", label: "Clients Served" },
+              { value: "95%", label: "Success Rate" },
+              { value: "50+", label: "Projects Delivered" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-gold-400 font-serif mb-2">
@@ -107,3 +73,4 @@ export default function Testimonials() {
     </section>
   );
 }
+

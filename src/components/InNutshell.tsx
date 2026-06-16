@@ -37,14 +37,6 @@ export default function InNutshell() {
           </div>
 
           <div className="mt-12 text-center">
-            <div className="inline-block bg-gold-500/10 border-2 border-gold-500 rounded-xl px-8 py-6">
-              <p className="text-2xl font-bold text-gold-400">
-                📞 One Call when Tech goes wrong
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-8 text-center">
             <div className="inline-block bg-slate-900/50 border border-gold-500/30 rounded-xl px-8 py-6">
               <p className="text-slate-300 text-lg mb-2">
                 <strong className="text-gold-400">We&apos;re different</strong> from traditional consultancies.

@@ -7,10 +7,18 @@ export default function Testimonials() {
 
   const testimonials = [
     {
-      quote: "Working with Quanterae Solutions has been transformative for our business. Their expertise and dedication are unmatched.",
-      author: "Business Owner",
-      role: "CEO",
-      company: "Growing Company",
+      quote: "We brought in Quanterae to help with our retentions department, and the results speak for themselves. They analyzed our staff performance and processes, then implemented strategic changes that increased our retention rate by 60%. The hands-on approach, including script writing and direct staff training, made all the difference.",
+      author: "Wiseguys Team",
+      role: "Retentions Department",
+      company: "Wiseguys",
+      result: "60% increase in retention rate"
+    },
+    {
+      quote: "We had over £100k in debt that we'd written off as unrecoverable. Quanterae came in, assessed our recovery processes and staff efficiency, and completely transformed our approach. They didn't just give advice—they wrote scripts, trained our team personally, and helped us recover what we thought was lost forever.",
+      author: "Kensington Mint Team",
+      role: "Debt Recovery Department",
+      company: "Kensington Mint",
+      result: "£100k+ recovered in previously unrecoverable debt"
     },
   ];
 
@@ -19,10 +27,10 @@ export default function Testimonials() {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-serif text-white mb-6">
-            Client Success Stories
+            Real Results
           </h2>
           <p className="text-xl text-slate-400">
-            Hear from businesses we&apos;ve helped transform
+            Case studies from businesses we&apos;ve helped transform
           </p>
         </div>
 
@@ -48,17 +56,38 @@ export default function Testimonials() {
                   <div className="text-sm text-gold-400">
                     {testimonials[activeIndex].company}
                   </div>
+                  <div className="text-sm font-bold text-green-400 mt-2">
+                    ✓ {testimonials[activeIndex].result}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
+          {/* Navigation Dots */}
+          {testimonials.length > 1 && (
+            <div className="flex justify-center gap-3 mb-8">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveIndex(index)}
+                  className={`w-3 h-3 rounded-full transition-all ${
+                    index === activeIndex
+                      ? "bg-gold-400 w-8"
+                      : "bg-slate-600 hover:bg-slate-500"
+                  }`}
+                  aria-label={`View testimonial ${index + 1}`}
+                />
+              ))}
+            </div>
+          )}
+
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
             {[
-              { value: "100+", label: "Clients Served" },
-              { value: "95%", label: "Success Rate" },
-              { value: "50+", label: "Projects Delivered" },
+              { value: "60%", label: "Retention Increase" },
+              { value: "£100k+", label: "Debt Recovered" },
+              { value: "2", label: "Major Case Studies" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-gold-400 font-serif mb-2">
